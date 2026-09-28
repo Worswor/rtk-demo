@@ -1,5 +1,7 @@
 import { useSelector, useDispatch } from 'react-redux';
 import { addItem, removeItem, clearCart } from './cartSlice';
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import Navbar from "./components/Navbar";
 
 function App() {
   // Get the dispatch function from the Redux store
@@ -31,9 +33,12 @@ function App() {
 
   return (
     <main>
-      <routes>
-        {/* <Route path="/" element={<Home />} /> */}
-      </routes>
+      <router>
+        <navbar />
+        <routes>
+          <Route path="/" element={<Home />} />
+        </routes>
+      </router>
 
       <h2>Products</h2>
 
