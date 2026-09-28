@@ -31,6 +31,10 @@ function App() {
 
   return (
     <main>
+      <routes>
+        {/* <Route path="/" element={<Home />} /> */}
+      </routes>
+
       <h2>Products</h2>
 
       {products.map((product) => (
